@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Google Map</title>
+
+    <script>
+        function myMap(){
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: new google.maps.LatLng(51.3, -0.2), zoom: 10
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9Bzq0JMLn7lIB7iHPueOqNfA6M80Zxt0&callback=myMap">
+</script>
+</head>
+
+<body>
+    <h1>My first google map</h1>
+
+    <div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+    <script>  myMap(); </script>
+</body>
+</html>
